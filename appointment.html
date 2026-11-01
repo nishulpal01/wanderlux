@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Appointment Request | WanderLux Travel Agency</title>
+<meta name="description" content="Request an appointment with a WanderLux travel consultant.">
+<meta name="keywords" content="travel agency, holiday packages, guided tours, honeymoon, trip cost calculator">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a><header><nav class="nav" aria-label="Main navigation"><a class="logo" href="index.html">Wander<span>Lux</span></a><button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button><ul><li><a href="index.html">Home</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="calculator.html">Trip Cost Calculator</a></li><li><a href="appointment.html" aria-current="page">Appointment</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+<main id="main">
+<div class="page-title"><h1>Request an appointment</h1><p>Talk to a travel consultant.</p></div><section class="block"><div id="sent-msg" class="ok" hidden role="status">Thanks! Your request was sent. We will reply within one business day.</div><form action="https://formsubmit.co/nishulpal02@gmail.com" method="POST" data-validate novalidate><input type="hidden" name="_subject" value="New appointment request"><input type="hidden" name="_next" value="https://YOUR-SITE-URL/appointment.html?sent=1"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"><div><label for="name">Name</label><input type="text" id="name" name="name" required><div class="err" id="name-err" role="alert"></div></div><div><label for="email">Email</label><input type="email" id="email" name="email" required><div class="err" id="email-err" role="alert"></div></div><div><label for="phone">Phone</label><input type="tel" id="phone" name="phone" required><div class="err" id="phone-err" role="alert"></div></div><div><label for="date">Preferred date</label><input type="date" id="date" name="date" required><div class="err" id="date-err" role="alert"></div></div><div><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea><div class="err" id="message-err" role="alert"></div></div><button class="btn" type="submit">Send request</button></form></section>
+</main>
+<footer><p>&copy; 2026 WanderLux Travel Agency. All rights reserved.</p><p>Level 5, 100 George Street, Sydney NSW 2000 | +61 2 9000 1234 | hello@wanderlux.example</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

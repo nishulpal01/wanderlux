@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trip Cost Calculator | WanderLux Travel Agency</title>
+<meta name="description" content="Estimate your trip cost by destination, travellers, days and travel style.">
+<meta name="keywords" content="travel agency, holiday packages, guided tours, honeymoon, trip cost calculator">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a><header><nav class="nav" aria-label="Main navigation"><a class="logo" href="index.html">Wander<span>Lux</span></a><button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button><ul><li><a href="index.html">Home</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="calculator.html" aria-current="page">Trip Cost Calculator</a></li><li><a href="appointment.html">Appointment</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+<main id="main">
+<div class="page-title"><h1>Trip cost calculator</h1><p>Get an instant estimate for your holiday.</p></div><section class="block"><form id="calc-form" novalidate>
+<div><label for="destination">Destination</label><select id="destination"><option value="">Select destination</option><option value="Bali">Bali</option><option value="Tokyo">Tokyo</option><option value="Paris">Paris</option><option value="Dubai">Dubai</option><option value="Maldives">Maldives</option></select><div class="err" id="destination-err" role="alert"></div></div>
+<div><label for="travellers">Number of travellers</label><input type="number" id="travellers" min="1" max="20" value="2"><div class="err" id="travellers-err" role="alert"></div></div>
+<div><label for="days">Number of days</label><input type="number" id="days" min="1" max="60" value="5"><div class="err" id="days-err" role="alert"></div></div>
+<div><label for="style">Travel style</label><select id="style"><option value="">Select style</option><option>Budget</option><option>Standard</option><option>Luxury</option></select><div class="err" id="style-err" role="alert"></div></div>
+<button class="btn" type="submit">Calculate cost</button></form><div class="result" id="result" role="status" aria-live="polite"></div>
+<p style="margin-top:16px;max-width:640px">Estimate = (daily cost per traveller + hotel rooms per night + return flight per traveller) &times; travel style multiplier (Budget 0.7, Standard 1.0, Luxury 1.8). One room is booked for every 2 travellers.</p></section>
+</main>
+<footer><p>&copy; 2026 WanderLux Travel Agency. All rights reserved.</p><p>Level 5, 100 George Street, Sydney NSW 2000 | +61 2 9000 1234 | hello@wanderlux.example</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
